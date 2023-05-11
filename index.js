@@ -1,25 +1,25 @@
 
-const message = () => {
+const message = (name) => {
     let number = Math.floor(Math.random()* 5);
     switch (number) {
         case 0:
-            return 'Hello world';
+            return name + ', you are wonderful';
             break;
         case 1:
-            return 'The life is beautiful';
+            return name + 'remenber always that the life is beautiful';
             break;
         case 2:
-            return 'We are going step to step';
+            return `Each project must be developed step by step, ${name} be pacient.` ;
             break;
         case 3:
-            return 'Never give up';
+            return `${name} never give up`;
             break;
         default:
-            return 'The family is first';
+            return `${name} keep in mind that the family is first`;
             break;
 
     }
 }
 
-console.log(message());
+console.log(message('Oscar'));
 
